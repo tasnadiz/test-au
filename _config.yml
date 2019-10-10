@@ -1,3 +1,5 @@
+baseurl: /test-au
+
 collections:
   projects:
     output: false
