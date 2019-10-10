@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /why_us/
+---
+<section class="pb-110" id='features'>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-8">
+                    <!-- section title -->
+                    <div class="section-title text-center">
+                        <h1>Get The Latest Updates</h1>
+                        <p>Akomba U was founded by the very same team behind Akomba labs, who have developed numerous leading projects in the blockchain industry. We aspire to deliver blockchain education in the most effective way possible, through transforming the exact framework behind our solutions into practical bite-sized courses.</p>  
+                    </div>
+                    <!-- End of section title -->
+                </div>
+
+                <h2>Check out some of our projects.</h2>
+            </div>
+
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-12">
+                    <div class="feature-carousel owl-carousel">
+                        
+                        {% for p in site.projects %}
+                        <!-- single feature inner -->
+                        <div class="single-feature-inner text-center">
+                            <a href ="{{p.link}}">
+                                <img src = "{{p.image-path}}"  alt="{{p.name}}">
+                            </a> 
+                        </div>
+                        <!-- End of single feature inner -->
+                        {% endfor %}
+                    </div><!--/.feature-carousel-->
+                </div><!--/.col-->
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section>

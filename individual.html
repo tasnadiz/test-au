@@ -1,0 +1,62 @@
+---
+layout: default
+title: Individual Courses
+description: Get the fastest download of blockchain information
+banner-image:  /assets/images/header-image-individual-courses.png
+permalink: /individual_courses/
+---
+
+<section class="border-top pt-115 pb-80" id='courses'>
+    <div class="container">
+
+
+        {% assign levels = site.individual_courses | group_by: "category" %}
+        {% for level in levels %}
+
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <!-- section title -->
+                    <div class="section-title text-center">
+                        <h2>{{ level.name }}</h2>
+                    </div>
+                    <!-- End of section title -->
+                </div>
+            </div>
+            
+            <div class="row">
+                {% for item in level.items %}
+                    <div class="col-lg-4 col-md-4">
+                        <!-- single blog inner -->
+                        <div class="single-blog-inner">
+                            <!-- blog image -->
+                            <div class="post-image">
+                                <a href="{{item.url}}">
+                                    <img src="{{item.image}}" alt="">
+                                </a>
+                            </div>
+                            <!--/.End of  blog image -->
+                    
+                            <!-- post content -->
+                            <div class="post-content">
+                                <div class="post-details">
+                                    <div class="post-title">
+                                        <h3><a href="{{item.url}}">{{item.course_title}}</a></h3>
+                                    </div>
+                                    <a class='blog-btn' href="{{item.url}}">Read More</a>
+                                </div>
+                            </div><!-- /.End of post content -->
+                        </div><!-- /.End of single blog inner -->
+                    </div>
+
+
+
+                {%endfor%}
+            </div>
+        {%endfor%}
+
+
+            
+       
+    </div>
+</section>

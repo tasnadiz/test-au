@@ -1,0 +1,212 @@
+/*==================================================================================
+    Custom Stylesheet (Any custom styling you want to apply should be defined here).
+====================================================================================*/
+
+
+.main-header .logo-normal{
+    display: none;
+}
+
+.main-header .logo-light{
+    display: block;
+}
+
+
+.main-header.sticky .logo-normal{
+    display: block;
+}
+
+.main-header.sticky .logo-light{
+    display: none;
+}
+
+
+.header-menu > ul > li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header-menu > ul > li > a {
+    color: #fff;
+}
+
+.section-title h2{
+    color:#695ac1;
+}
+
+
+.course-image {
+   /*  border-radius: 16px; */
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.course-image a img{
+ /*    border-radius: 16px; */
+    max-width:120px;
+}
+
+
+
+.course-image:hover{
+/*     box-shadow: 0 13px 30px rgba(0,0,0,.20); */
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.course-title{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 36px;
+}
+
+
+
+.presenter-carousel button.owl-dot {
+    height: 7px;
+    width: 7px;
+    background: #ded7f4 !important;
+    margin-right: 5px;
+    border-radius: 50%;
+    -webkit-transition: .3s all linear;
+    transition: .3s all linear;
+    line-height: 10px;
+    vertical-align: middle;
+}
+.presenter-carousel button.owl-dot.active {
+    background: #5b39c9 !important;
+    height: 10px;
+    width: 10px;
+}
+.presenter-carousel .owl-dots {
+    text-align: center;
+    margin-top: 36px;
+}
+
+
+.banner-inner-area{
+    padding: 0 0 60px 0;
+}
+
+.banner-bg {
+    background: url(../images/bg-gradient.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: contain;
+    padding-top: 140px;
+    padding-bottom: 30px;
+}
+
+.banner-text-inner{
+    padding-right: 30px;
+}
+
+.banner-text-inner h1{
+    font-size: 35px;
+    line-height: 40px;
+    color: white;
+}
+
+.banner-text-inner p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.banner-image {
+    margin-bottom: -30px;
+}
+
+
+.banner-text-inner .btn {
+    background: none;
+    border-color: #fff;
+    color: #fff;
+}
+
+.banner-text-inner .btn:hover {
+    background: #fff ;
+    border-color: #fff;
+    color: #36324a;
+}
+
+.banner-text-inner .btn:before{
+    background: #fff ;
+}
+
+
+.feature-carousel .owl-stage-outer {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.center .single-feature-inner{
+    border: none;
+    box-shadow: 0px 0px 12px #f0f0f0;
+}
+
+.presenter-carousel .text-center{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.presenter-icon {
+    display: inline-block;
+    width:128px;
+    height: 128px;
+    border-radius: 50%;
+    background: #5b39c9;
+    margin-bottom: 20px;
+}
+
+.single-partner img{
+    height:40px;
+}
+
+.footer-logo img {
+    height:48px;
+}
+
+
+.course-content ul{
+    padding-inline-start: 40px;
+}
+
+.course-content ul li {
+    list-style-type: square;
+}
+
+.course-content ol > li {
+    list-style-type: decimal;
+}
+
+.course-content  ul li > ul li {
+    list-style-type: circle;
+}
+
+.course-content h4 {
+    margin-top:25px;
+}
+
+.course-content h5 {
+    margin-top:20px;
+}
+.course-content h6 {
+    margin-top:15px;
+}
+
+.latest-post-wrap .latest-post-img img{
+    height: 100%;
+}
+
+
+@media (max-width: 1199.98px){
+
+    .course-title{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+}
