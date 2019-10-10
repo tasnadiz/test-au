@@ -1,5 +1,5 @@
 url: tasnadiz.github.io
-baseurl: /test-au
+baseurl: ""
 
 collections:
   projects:
