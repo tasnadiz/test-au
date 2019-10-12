@@ -31,8 +31,8 @@ permalink: /individual_courses/
                         <div class="single-blog-inner">
                             <!-- blog image -->
                             <div class="post-image">
-                                <a href="{{item.url}}">
-                                    <img src="{{item.image}}" alt="">
+                                <a href="{{item.url | relative_url}}">
+                                    <img src="{{item.image | relative_url}}" alt="">
                                 </a>
                             </div>
                             <!--/.End of  blog image -->
@@ -41,9 +41,9 @@ permalink: /individual_courses/
                             <div class="post-content">
                                 <div class="post-details">
                                     <div class="post-title">
-                                        <h3><a href="{{item.url}}">{{item.course_title}}</a></h3>
+                                        <h3><a href="{{item.url | relative_url}}">{{item.course_title}}</a></h3>
                                     </div>
-                                    <a class='blog-btn' href="{{item.url}}">Read More</a>
+                                    <a class='blog-btn' href="{{item.url | relative_url}}">Read More</a>
                                 </div>
                             </div><!-- /.End of post content -->
                         </div><!-- /.End of single blog inner -->

@@ -12,7 +12,7 @@ layout: default
                         <!-- blog image -->
                         <div class="post-image">
                             <a href="#">
-                                <img src="{{page.image}}" alt="">
+                                <img src="{{page.image | relative_url}}" alt="">
                             </a>
                             <!--  <div class="post-date">
                                 <p><span>30</span>Sep</p>
@@ -65,7 +65,7 @@ layout: default
                                         <li>
                                             <div class="latest-post-wrap media">
                                                 <div class="latest-post-img">
-                                                    <img src="{{p.image}}" alt="">
+                                                    <img src="{{p.image | relative_url}}" alt="">
                                                 </div>
                                                 <div class="latest-post-body media-body">
                                                     <p>{{p.course_title}}</p>

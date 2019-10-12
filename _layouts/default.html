@@ -17,25 +17,25 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
 
     <!--==== Bootstrap css file ====-->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{'/assets/css/bootstrap.min.css' | relative_url}}">
 
     <!--==== Font-Awesome css file ====-->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{'/assets/css/font-awesome.min.css' | relative_url }}">
 
     <!-- Owl Carusel css file -->
-    <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{'/assets/plugins/owl-carousel/owl.carousel.min.css' | relative_url}}">
 
     <!-- ====video poppu css==== -->
-    <link rel="stylesheet" href="/assets/plugins/Magnific-Popup/magnific-popup.css">
+    <link rel="stylesheet" href="{{'/assets/plugins/Magnific-Popup/magnific-popup.css' | relative_url}}">
 
     <!--==== Style css file ====-->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{'/assets/css/style.css' | relative_url}}">
 
     <!--==== Responsive css file ====-->
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="{{'/assets/css/responsive.css' | relative_url}}">
 
     <!--==== Custom css file ====-->
-    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="{{'/assets/css/custom.css' | relative_url}}">
 </head>
 
 <body>
@@ -68,8 +68,8 @@
                             <!-- Logo -->
                             <div class="logo">
                                 <a href="index.html">
-                                    <img  class="logo-normal" src="/assets/images/akomba-edu-logo.png"  alt="akomba">
-                                    <img class="logo-light" src="/assets/images/akomba-edu-logo_light.png"  alt="akomba">
+                                    <img  class="logo-normal" src="{{'/assets/images/akomba-edu-logo.png' | relative_url}}"  alt="akomba">
+                                    <img class="logo-light" src="{{'/assets/images/akomba-edu-logo_light.png' | relative_url}}"  alt="akomba">
                                 </a>
                             </div>
                             <!-- End of Logo -->
@@ -81,11 +81,11 @@
                                         <!-- Header-menu -->
                                         <div class="header-menu dosis">
                                             <ul>
-                                                <li><a href="/#top">Home</a></li>
-                                                <li><a href="/why_us">Why us?</a></li>
-                                                <li><a href="/#courses">Courses</a></li>
-                                                <li><a href="/#instructors">Instructors</a></li>
-                                                <li><a href="/#contactus">Contact us</a></li>
+                                                <li><a href="{{'/#top' | relative_url}}">Home</a></li>
+                                                <li><a href="{{'/why_us' | relative_url}}">Why us?</a></li>
+                                                <li><a href="{{'/#courses' | relative_url}}">Courses</a></li>
+                                                <li><a href="{{'/#instructors' | relative_url}}">Instructors</a></li>
+                                                <li><a href="{{'/#contactus' | relative_url}}">Contact us</a></li>
                                             </ul>
                                         </div>
                                         <!-- End of Header-menu -->
@@ -117,13 +117,13 @@
                             <div class="banner-text-inner">
                                 <div class="banner-shape-wrap">
                                     <div class="banner-shape-inner">
-                                        <img src="/assets/img/banner/shaps1.png" alt="" class='shape shape1 rotate3d'>
-                                        <img src="/assets/img/banner/shaps2.png" alt="" class='shape shape2 rotate2d'>
-                                        <img src="/assets/img/banner/shaps3.png" alt="" class='shape shape3 rotate-2d'>
-                                        <img src="/assets/img/banner/shaps4.png" alt="" class='shape shape4 rotate3d'>
-                                        <img src="/assets/img/banner/shaps5.png" alt="" class='shape shape5 rotate2d'>
-                                        <img src="/assets/img/banner/shaps6.png" alt="" class='shape shape6 rotate-2d'>
-                                        <img src="/assets/img/banner/shaps7.png" alt="" class='shape shape7 rotate3d'>
+                                        <img src="{{'/assets/img/banner/shaps1.png' | relative_url}}" alt="" class='shape shape1 rotate3d'>
+                                        <img src="{{'/assets/img/banner/shaps2.png' | relative_url}}" alt="" class='shape shape2 rotate2d'>
+                                        <img src="{{'/assets/img/banner/shaps3.png' | relative_url}}" alt="" class='shape shape3 rotate-2d'>
+                                        <img src="{{'/assets/img/banner/shaps4.png' | relative_url}}" alt="" class='shape shape4 rotate3d'>
+                                        <img src="{{'/assets/img/banner/shaps5.png' | relative_url}}" alt="" class='shape shape5 rotate2d'>
+                                        <img src="{{'/assets/img/banner/shaps6.png' | relative_url}}" alt="" class='shape shape6 rotate-2d'>
+                                        <img src="{{'/assets/img/banner/shaps7.png' | relative_url}}" alt="" class='shape shape7 rotate3d'>
                                     </div>
                                 </div>
                                 
@@ -148,7 +148,7 @@
                             {% if page.banner-image %}
                             <!-- banner image-->
                             <div class="banner-image">
-                                <img src="{{page.banner-image}}" alt="">
+                                <img src="{{page.banner-image  | relative_url}}" alt="">
                             </div>
                             <!--End of banner image-->
                             {% endif %}
@@ -164,7 +164,7 @@
     
     <footer class="footer">
         <div class="footerbg">
-        <img src="/assets/img/footer-bg.png" alt="">
+        <img src="{{'/assets/img/footer-bg.png' | relative_url}}" alt="">
         </div>
         <div class="footer-top pt-120 pb-110">
             <div class="container">
@@ -173,7 +173,7 @@
                         <!-- footer widget -->
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="/assets/images/akomba-edu-logo.png" alt=""></a>
+                                <a href="index.html"><img src="{{'/assets/images/akomba-edu-logo.png' | relative_url}}" alt=""></a>
                             </div>
                             <!--<p>Lorem ipsum dolor sit ame consy ect etur adipisc de elit. Quisque act raqum nunc no dolor sit de
                                 amet.</p>-->
@@ -280,37 +280,37 @@
 
     <!-- JS Files -->
    <!-- ==== JQuery 3.3.1 js file==== -->
-    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{{'/assets/js/jquery-3.3.1.min.js' | relative_url}}"></script>
 
     <!-- ==== Bootstrap js file==== -->
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{'/assets/js/bootstrap.bundle.min.js' | relative_url}}"></script>
 
     <!-- ==== JQuery Waypoint js file==== -->
-    <script src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="{{'/assets/plugins/waypoints/jquery.waypoints.min.js' | relative_url}}"></script>
 
     <!-- ==== Parsley js file==== -->
-    <script src="/assets/plugins/parsley/parsley.min.js"></script>
+    <script src="{{'/assets/plugins/parsley/parsley.min.js' | relative_url}}"></script>
 
     <!-- ==== parallax js==== -->
-    <script src="/assets/plugins/parallax/parallax.js"></script>
+    <script src="{{'/assets/plugins/parallax/parallax.js' | relative_url}}"></script>
 
     <!-- ==== Owl Carousel js file==== -->
-    <script src="/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="{{'/assets/plugins/owl-carousel/owl.carousel.min.js' | relative_url}}"></script>
 
     <!-- ==== Menu  js file==== -->
-    <script src="/assets/js/menu.min.js"></script>
+    <script src="{{'/assets/js/menu.min.js' | relative_url}}"></script>
 
     <!-- ===video popup=== -->
-    <script src="/assets/plugins/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="{{'/assets/plugins/Magnific-Popup/jquery.magnific-popup.min.js' | relative_url}}"></script>
 
     <!-- ====Counter js file=== -->
-    <script src="/assets/plugins/waypoints/jquery.counterup.min.js"></script>
+    <script src="{{'/assets/plugins/waypoints/jquery.counterup.min.js' | relative_url}}"></script>
 
     <!-- ==== Script js file==== -->
-    <script src="/assets/js/scripts.js"></script>
+    <script src="{{'/assets/js/scripts.js' | relative_url}}"></script>
 
     <!-- ==== Custom js file==== -->
-    <script src="/assets/js/custom.js"></script>
+    <script src="{{'/assets/js/custom.js' | relative_url}}"></script>
 
 </body>
 </html>
